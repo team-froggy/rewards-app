@@ -76,11 +76,11 @@ describe.only('Bars API', () => {
             
     });
 
-    it('Gets a list of sales per bar', () => {
+    it.skip('Gets a list of sales per bar', () => {
 
     });
 
-    it('Gets a list of sales per customer', () => {
+    it.skip('Gets a list of sales per customer', () => {
 
     });
 
