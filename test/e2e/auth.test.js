@@ -73,5 +73,13 @@ describe('Auth API', () => {
                 assert.equal(res.body.error, 'Email already in use');
             });
     });
-    
+
+    it('gives a 401 error on bad email signin', () => {
+        return request
+            .post('/api/auth/signin')
+            .send({
+                email: 'easton@email.com',
+                password: 'pwd123'
+            });
+    });
 });
