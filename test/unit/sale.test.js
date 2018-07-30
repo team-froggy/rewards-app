@@ -28,15 +28,26 @@ describe('Sale model', () => {
         delete json._id;
         delete json.drinks[0]._id;
         delete json.food[0]._id;
-        console.log('****JSON****', json);
-        console.log('****DATA****', data);
+        
         assert.deepEqual(json, data);
         assert.isUndefined(sale.validateSync());
     });
 
-    it('validates required fields (drinks, food, amount spent)', () => {
-        const sale = new Sale({});
-        const errors = getErrors(sale.validateSync(), 1);
-        assert.equal(errors.drinks.kind, 'required');
+    it.only('validates required fields (drinks, food, amount spent)', () => {
+        const sale = new Sale({
+            drinks:[{}],
+            food:[{}]
+        });
+        const errors = getErrors(sale.validateSync(), 10);
+        assert.equal(errors.bar.kind, 'required');
+        assert.equal(errors.customer.kind, 'required');
+        assert.equal(errors['drinks.0.type'].kind, 'required');
+        assert.equal(errors['drinks.0.name'].kind, 'required');
+        assert.equal(errors['drinks.0.price'].kind, 'required');
+        assert.equal(errors['drinks.0.quantity'].kind, 'required');
+        assert.equal(errors['food.0.type'].kind, 'required');
+        assert.equal(errors['food.0.price'].kind, 'required');
+        assert.equal(errors['food.0.quantity'].kind, 'required');
+        assert.equal(errors.totalAmountSpent.kind, 'required');
     });
 });
