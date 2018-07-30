@@ -1,0 +1,35 @@
+{
+    "name": "Kevin",
+    "year": 1970,
+    "email": "kevin@acl-teamfroggy.com",
+    "password": "frogger1",
+    "roles": ["admin", "customer"]
+}
+{
+    "name": "Easton",
+    "year": 1970,
+    "email": "easton@acl-teamfroggy.com",
+    "password": "frogger1",
+    "roles": ["admin", "customer"]
+}
+{
+    "name": "Carmen",
+    "year": 1970,
+    "email": "carmen@acl-teamfroggy.com",
+    "password": "frogger1",
+    "roles": ["admin", "customer"]
+}
+{
+    "name": "Louis",
+    "year": 2010,
+    "email": "louis@acl-teamfroggy.com",
+    "password": "frogger2",
+    "roles": ["owner", "customer"]
+}
+{
+    "name": "Journey",
+    "year": 2012,
+    "email": "journey@acl-teamfroggy.com",
+    "password": "frogger3",
+    "roles": ["customer"]
+}
