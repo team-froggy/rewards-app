@@ -3,6 +3,7 @@ const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
 const { Types } = require('mongoose');
+const ensureOwner = require('../../lib/util/ensure-role')('owner');
 
 describe.only('Bars API', () => {
 
@@ -76,11 +77,20 @@ describe.only('Bars API', () => {
             
     });
 
-    it.skip('Gets a list of sales per bar', () => {
-
+    it('Updates a bar by _id if owner of the bar', () => {
+        lifeOfRiley.name = 'Life of SMILEY';
+        lifeOfRiley.location.city = 'London';
+        return request
+            .put(`/api/bars/${lifeOfRiley._id}`)
+            .send(lifeOfRiley)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body.name, lifeOfRiley.name);
+                assert.deepEqual(body.location.city, lifeOfRiley.location.city);
+            });
     });
 
-    it.skip('Gets a list of sales per customer', () => {
+    it('Deletes a bar if owner', () => {
 
     });
 
