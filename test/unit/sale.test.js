@@ -33,7 +33,7 @@ describe('Sale model', () => {
         assert.isUndefined(sale.validateSync());
     });
 
-    it.only('validates required fields (drinks, food, amount spent)', () => {
+    it('validates required fields (drinks, food, amount spent)', () => {
         const sale = new Sale({
             drinks:[{}],
             food:[{}]
