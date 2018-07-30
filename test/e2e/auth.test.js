@@ -11,10 +11,10 @@ describe('Auth API', () => {
     let token;
     beforeEach(() => {
         return request
-            .post('api/auth/signup')
+            .post('/api/auth/signup')
             .send({
                 name: 'Easton John',
-                year: '2000',
+                year: 2000,
                 email: 'easton@email.com',
                 password: 'pwd123',
                 roles: ['customer']
@@ -29,4 +29,5 @@ describe('Auth API', () => {
         assert.isDefined(token);
     });
 
+    
 });

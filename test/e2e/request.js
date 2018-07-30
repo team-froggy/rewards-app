@@ -9,6 +9,7 @@ const server = createServer(app);
 const request = chai.request(server).keepOpen();
 
 request.checkOk = res => {
+    console.log('res status ', res.status);
     assert.equal(res.status, 200, 'expected http 200 status code');
     return res;
 };
@@ -23,7 +24,7 @@ request.save = (path, token = null, data) => {
 };
 
 request.getToken = () => request
-    .post('api/auth/signup')
+    .post('/api/auth/signup')
     .send({
         email: 'easton@email.com',
         password: 'pwd123'
