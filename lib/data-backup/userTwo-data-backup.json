@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c4"},"name":"Easton","year":1970,"email":"easton@acl-teamfroggy.com","password":"frogger1","roles":["admin","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c5"},"name":"Carmen","year":1970,"email":"carmen@acl-teamfroggy.com","password":"frogger1","roles":["admin","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c6"},"name":"Journey","year":2012,"email":"journey@acl-teamfroggy.com","password":"frogger3","roles":["customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c7"},"name":"Kevin","year":1970,"email":"kevin@acl-teamfroggy.com","password":"frogger1","roles":["admin","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c8"},"name":"Louis","year":2010,"email":"louis@acl-teamfroggy.com","password":"frogger2","roles":["owner","customer"]}
