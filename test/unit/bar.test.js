@@ -3,9 +3,9 @@ const Bar = require('../../lib/models/bar');
 const { Types } = require('mongoose');
 const { getErrors } = require('./helpers');
 
-describe('Bar model', () => {
+describe.only('Bar model', () => {
 
-    it('Validates good model', () => {
+    it('Validates a good model', () => {
         const data = {
             name: 'Red Star',
             location: {
