@@ -6,12 +6,13 @@ const { Types } = require('mongoose');
 
 describe.only('Bars API', () => {
 
-    let lifeOfRiley;
-
+    
     beforeEach(() => dropCollection('bars'));
-
+    
+    let lifeOfRiley;
+    let teardrop;
     beforeEach(() => {
-        let data = {
+        let bar = {
             name: 'Life of Riley',
             location: {
                 address: 'Somewhere in the Pearl',
@@ -25,20 +26,15 @@ describe.only('Bars API', () => {
         };
         return request
             .post('/api/bars')
-            .send(data)
+            .send(bar)
             .then(checkOk)
-            .then(data => {
-                lifeOfRiley = data;
+            .then(({ body }) => {
+                lifeOfRiley = body;
             });
     });
 
-    it('Saves a bar', () => {
-        assert.isOk(lifeOfRiley);
-    });
-
-    it('Gets a list of bars', () => {
-        let teardrop;
-        let data = {
+    beforeEach(() => {
+        let bar = {
             name: 'Teardrop',
             location: {
                 address: 'Also in the Pearl',
@@ -52,12 +48,20 @@ describe.only('Bars API', () => {
         };
         return request
             .post('/api/bars')
-            .send(data)
+            .send(bar)
             .then(checkOk)
-            .then(data => {
-                teardrop = data;
-                return request.get('/api/bars');
-            })
+            .then(({ body }) => {
+                teardrop = body;
+            });
+    });
+
+    it('Saves a bar', () => {
+        assert.isOk(lifeOfRiley);
+    });
+
+    it('Gets a list of bars', () => {
+        return request
+            .get('/api/bars')
             .then(({ body }) => {
                 assert.deepEqual(body, [lifeOfRiley, teardrop]);
             });
