@@ -68,7 +68,12 @@ describe.only('Bars API', () => {
     });
 
     it('Gets a bar by _id', () => {
-
+        return request
+            .get(`/api/bars/${lifeOfRiley._id}`)
+            .then(({ body }) => {
+                assert.deepEqual(body, lifeOfRiley._id);
+            });
+            
     });
 
     it('Gets a list of sales per bar', () => {
