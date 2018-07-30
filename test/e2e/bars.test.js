@@ -91,7 +91,17 @@ describe.only('Bars API', () => {
     });
 
     it('Deletes a bar if owner', () => {
-
+        return request
+            .delete(`/api/bars/${lifeOfRiley._id}`)
+            .then(checkOk)
+            .then(res => {
+                assert.deepEqual(res.body, { removed: true });
+                return request.get('/api/bars');
+            })
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body, [teardrop]);
+            });
     });
 
 });
