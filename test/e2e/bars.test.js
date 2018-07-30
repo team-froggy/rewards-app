@@ -71,7 +71,7 @@ describe.only('Bars API', () => {
         return request
             .get(`/api/bars/${lifeOfRiley._id}`)
             .then(({ body }) => {
-                assert.deepEqual(body, lifeOfRiley._id);
+                assert.deepEqual(body, lifeOfRiley);
             });
             
     });
