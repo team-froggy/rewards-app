@@ -29,5 +29,22 @@ describe('Auth API', () => {
         assert.isDefined(token);
     });
 
-    
+    it('verifies a token', () => {
+        return request
+            .get('/api/auth/verify')
+            .set('Authorization', token)
+            .then(checkOk);
+    });
+
+    it('can sign in a user', () => {
+        return request.post('/api/auth/signin')
+            .send({
+                email: 'easton@email.com',
+                password: 'pwd123'
+            })
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.isDefined(body.token);
+            });
+    });
 });
