@@ -11,7 +11,7 @@ describe.only('Bars API', () => {
     beforeEach(() => dropCollection('bars'));
 
     beforeEach(() => {
-        let barData = {
+        let data = {
             name: 'Life of Riley',
             location: {
                 address: 'Somewhere in the Pearl',
@@ -25,10 +25,10 @@ describe.only('Bars API', () => {
         };
         return request
             .post('/api/bars')
-            .send(barData)
+            .send(data)
             .then(checkOk)
-            .then(({ body }) => {
-                lifeOfRiley = body;
+            .then(data => {
+                lifeOfRiley = data;
             });
     });
 
@@ -37,7 +37,30 @@ describe.only('Bars API', () => {
     });
 
     it('Gets a list of bars', () => {
-
+        let teardrop;
+        let data = {
+            name: 'Teardrop',
+            location: {
+                address: 'Also in the Pearl',
+                city: 'Portland',
+                state: 'OR',
+                zip: '97777'
+            },
+            phone: '5031234567',
+            hours: 'Lots of hours',
+            owner: Types.ObjectId()
+        };
+        return request
+            .post('/api/bars')
+            .send(data)
+            .then(checkOk)
+            .then(data => {
+                teardrop = data;
+                return request.get('/api/bars');
+            })
+            .then(({ body }) => {
+                assert.deepEqual(body, [lifeOfRiley, teardrop]);
+            });
     });
 
     it('Gets a bar by _id', () => {
