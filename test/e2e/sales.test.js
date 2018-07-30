@@ -30,13 +30,51 @@ describe.only('Sales API', () => {
                 }],
                 totalAmountSpent: 20
             })
+            .then(({ body }) => sale = body);
+    });
+
+    let saleTwo;
+    beforeEach(() => {
+        return request
+            .post('/api/sales')
+            .send({
+                bar: Types.ObjectId(),
+                customer: Types.ObjectId(), 
+                drinks: [{
+                    type: 'wine',
+                    name:'Merlot',
+                    price: 5,
+                    quantity: 2
+                }],
+                food: [{
+                    type: 'dessert',
+                    price: 5,
+                    quantity: 1
+                }],
+                totalAmountSpent: 15
+            })
+            .then(({ body }) => saleTwo = body);
+    });
+
+
+    it('POST a transaction', () => {
+        assert.isOk(sale._id);
+    });
+
+    it('GET a list of all sales/transactions', () => {
+        return request
+            .get('/api/sales')
+            .then(checkOk)
             .then(({ body }) => {
-                console.log('****BODY****', body);
-                sale = body;
+                assert.deepEqual(body, [sale, saleTwo]);
             });
     });
 
-    it('saves a sale transaction', () => {
-        assert.isOk(sale._id);
+    it('GET a list of all sales specific to an individual bar', () => {
+        return request
+            .get(`/api/sales/${sale.bar}`)
+            .then(({ body }) => {
+                assert.deepEqual(body, [sale]);
+            });
     });
 });
