@@ -6,7 +6,7 @@ const usersDataFile = join(__dirname, '../../lib/data/users-data.json');
 const salesDataFile = join(__dirname, '../../lib/data/sales-data.json');
 const { dropCollection } = require('./_db');
 
-describe.only('Seed data API', () => {
+describe('Seed data API', () => {
 
     beforeEach(() => dropCollection('bars'));
     beforeEach(() => dropCollection('users'));
