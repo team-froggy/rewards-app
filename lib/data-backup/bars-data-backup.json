@@ -1,180 +1,180 @@
 {
-"name": "Red Star",
-"location": {
-    "address": "503 SW Alder St.",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97204"
-    },
-"phone": "5032220005",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Bethany's Table",
-"location": {
-    "address": "15325 Northwest Central Drive,Ste J-1",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97229"
-    },
-"phone": "5036140267",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Aviary",
-"location": {
-    "address": "1733 NE Alberta St",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97211"
-    },
-"phone": "5032872400",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Cocotte",
-"location": {
-    "address": "2930 NE Killingsworth",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97211"
-    },
-"phone": "5032272669",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Streetcar Bistro & Taproom",
-"location": {
-    "address": "1101 NW Northrup St",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97209"
-    },
-"phone": "5032272988",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Bastas Trattoria and Bar",
-"location": {
-    "address": "410 NW 21st",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97209"
-    },
-"phone": "5032741572",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Mama Mia Trattoria",
-"location": {
-    "address": "439 SW 2nd Ave (Downtown)",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97204"
-    },
-"phone": "5032956464",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Bistro 921",
-"location": {
-    "address": "Hilton Portland",
-    "city": "Portland",
-    "state": "OR",
-    "zip": "97204"
-    },
-"phone": "5032202685",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Accanto",
+    "name": "Red Star",
     "location": {
-        "address": "2838 SE Belmont St",
-        "city": "Portland",
-        "state": "OR",
-        "zip": "97214"
-    },
-"phone": "5032354900",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Imperial",
-    "location": {
-        "address": "410 SW Broadway",
-        "city": "Portland",
-        "state": "OR",
-        "zip": "97205"
-    },
-"phone": "5032287222",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Beast",
-    "location": {
-        "address": "5425 NE 30th Ave",
-        "city": "Portland",
-        "state": "OR",
-        "zip": "97211"
-    },
-"phone": "5038416968",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
-}
-{
-"name": "Urban Farmer",
-    "location": {
-        "address": "525 SW Morrison St.",
+        "address": "503 SW Alder St.",
         "city": "Portland",
         "state": "OR",
         "zip": "97204"
-    },
-"phone": "5032224900",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
+        },
+    "phone": "5032220005",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
 }
 {
-"name": "Roe",
+    "name": "Bethany's Table",
     "location": {
-        "address": "3113 SE Division",
+        "address": "15325 Northwest Central Drive,Ste J-1",
         "city": "Portland",
         "state": "OR",
-        "zip": "97202"
-    },
-"phone": "5032321566",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
+        "zip": "97229"
+        },
+    "phone": "5036140267",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
 }
 {
-"name": "Noisette",
+    "name": "Aviary",
     "location": {
-        "address": "1937 NW 23rd Place",
+        "address": "1733 NE Alberta St",
         "city": "Portland",
         "state": "OR",
-        "zip": "97210"
-    },
-"phone": "5037194599",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
+        "zip": "97211"
+        },
+    "phone": "5032872400",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
 }
 {
-"name": "Urban Fondue",
+    "name": "Cocotte",
     "location": {
-        "address": "2114 NW Glisan Street",
+        "address": "2930 NE Killingsworth",
         "city": "Portland",
         "state": "OR",
-        "zip": "97210"
-    },
-"phone": "5032421400",
-"hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
-"owner": ""
+        "zip": "97211"
+        },
+    "phone": "5032272669",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Streetcar Bistro & Taproom",
+    "location": {
+        "address": "1101 NW Northrup St",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97209"
+        },
+    "phone": "5032272988",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Bastas Trattoria and Bar",
+    "location": {
+        "address": "410 NW 21st",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97209"
+        },
+    "phone": "5032741572",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Mama Mia Trattoria",
+    "location": {
+        "address": "439 SW 2nd Ave (Downtown)",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97204"
+        },
+    "phone": "5032956464",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Bistro 921",
+    "location": {
+        "address": "Hilton Portland",
+        "city": "Portland",
+        "state": "OR",
+        "zip": "97204"
+        },
+    "phone": "5032202685",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Accanto",
+        "location": {
+            "address": "2838 SE Belmont St",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97214"
+        },
+    "phone": "5032354900",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Imperial",
+        "location": {
+            "address": "410 SW Broadway",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97205"
+        },
+    "phone": "5032287222",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Beast",
+        "location": {
+            "address": "5425 NE 30th Ave",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97211"
+        },
+    "phone": "5038416968",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Urban Farmer",
+        "location": {
+            "address": "525 SW Morrison St.",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97204"
+        },
+    "phone": "5032224900",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Roe",
+        "location": {
+            "address": "3113 SE Division",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97202"
+        },
+    "phone": "5032321566",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Noisette",
+        "location": {
+            "address": "1937 NW 23rd Place",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97210"
+        },
+    "phone": "5037194599",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
+}
+{
+    "name": "Urban Fondue",
+        "location": {
+            "address": "2114 NW Glisan Street",
+            "city": "Portland",
+            "state": "OR",
+            "zip": "97210"
+        },
+    "phone": "5032421400",
+    "hours": "Mon 8:00am - 2:00pm & 5:30pm - 10:00pm, Tue 8:00am - 2:00pm & 5:30pm - 10:00pm, Wed 8:00am - 2:00pm & 5:30pm - 10:00pm, Thu 8:00am - 2:00pm & 5:30pm - 10:00pm, Fri 8:00am - 2:00pm & 5:30pm - 10:00pm, Sat 9:00am - 2:30pm & 5:30pm - 10:00pm, Sun 9:00am - 2:30pm & 5:30pm - 9:00pm",
+    "owner": ""
 }
