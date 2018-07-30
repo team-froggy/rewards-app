@@ -2,6 +2,7 @@ const { assert } = require('chai');
 const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
+const { Types } = require('mongoose');
 
 describe.only('Bars API', () => {
 
@@ -20,7 +21,7 @@ describe.only('Bars API', () => {
             },
             phone: '9711234567',
             hours: 'All day err day',
-            owner: 'INSERT ID OF USER HERE'
+            owner: Types.ObjectId()
         };
         return request
             .post('/api/bars')
