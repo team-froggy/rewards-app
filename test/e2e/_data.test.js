@@ -1,21 +1,21 @@
 const { execSync } = require('child_process');
 const { join } = require('path');
 const mongoose = require('mongoose');
-// const barsDataFile = join(__dirname, '../../lib/data/bars-data.json');
-// const usersDataFile = join(__dirname, '../../lib/data/users-data.json');
-// const salesDataFile = join(__dirname, '../../lib/data/sales-data.json');
+const barsDataFile = join(__dirname, '../../lib/data/bars-data.json');
+const usersDataFile = join(__dirname, '../../lib/data/users-data.json');
+const salesDataFile = join(__dirname, '../../lib/data/sales-data.json');
 const { dropCollection } = require('./_db');
 
 describe('Seed data API', () => {
 
     beforeEach(() => dropCollection('bars'));
-    // beforeEach(() => dropCollection('users'));
-    // beforeEach(() => dropCollection('sales'));
+    beforeEach(() => dropCollection('users'));
+    beforeEach(() => dropCollection('sales'));
 
     beforeEach(() => {
-        // execSync(`mongoimport --db ${mongoose.connection.name} --collection users --drop --file ${usersDataFile}`);
-        // execSync(`mongoimport --db ${mongoose.connection.name} --collection bars --drop --file ${barsDataFile}`);
-        // execSync(`mongoimport --db ${mongoose.connection.name} --collection sales --drop --file ${salesDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection users --drop --file ${usersDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection bars --drop --file ${barsDataFile}`);
+        execSync(`mongoimport --db ${mongoose.connection.name} --collection sales --drop --file ${salesDataFile}`);
     });
 
     // TERMINAL commands to take seed data and export back to json data files (to keep same ObjectId)
