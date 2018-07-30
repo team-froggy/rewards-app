@@ -3,7 +3,7 @@ const Bar = require('../../lib/models/bar');
 const { Types } = require('mongoose');
 const { getErrors } = require('./helpers');
 
-describe.only('Bar model', () => {
+describe('Bar model', () => {
 
     it('Validates a good model', () => {
         const data = {
