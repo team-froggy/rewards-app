@@ -1,5 +1,5 @@
-{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c4"},"name":"Easton","year":1970,"email":"easton@acl-teamfroggy.com","password":"frogger1","roles":["admin","customer"]}
-{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c5"},"name":"Carmen","year":1970,"email":"carmen@acl-teamfroggy.com","password":"frogger1","roles":["admin","customer"]}
-{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c6"},"name":"Journey","year":2012,"email":"journey@acl-teamfroggy.com","password":"frogger3","roles":["customer"]}
-{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c7"},"name":"Kevin","year":1970,"email":"kevin@acl-teamfroggy.com","password":"frogger1","roles":["admin","customer"]}
-{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c8"},"name":"Louis","year":2010,"email":"louis@acl-teamfroggy.com","password":"frogger2","roles":["owner","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c4"},"name":"Easton","year":1970,"email":"easton@acl-teamfroggy.com","hash":"$2a$08$Mie0k2NattOBLPqwFAGWOeYo2EN3Q0gfulUBhdBzpinWjltuT0Uru","roles":["admin","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c5"},"name":"Carmen","year":1970,"email":"carmen@acl-teamfroggy.com","hash":"$2a$08$h2Sd.yLrFxXYhlh/Tbkmzu2LoVPGlB2PvNZdamAzylbl19H3VILZS","roles":["admin","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c6"},"name":"Journey","year":2012,"email":"journey@acl-teamfroggy.com","hash":"$2a$08$sntzRA7iAujwOItNAul4iOhhr3R2ME8FZ0wQQeGlGzSA.i8TqQw8y","roles":["customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c7"},"name":"Kevin","year":1970,"email":"kevin@acl-teamfroggy.com","hash":"$2a$08$bEiYw5Mnz3R1Tolx2UQwLuE2I2hDz0Xkxvm8MfHTWKgORiow3MmkC","roles":["admin","customer"]}
+{"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c8"},"name":"Louis","year":2010,"email":"louis@acl-teamfroggy.com","hash":"$2a$08$U.ycPaePRMMmsTodS/abbe2zZwBhN8siSx6qOFA0hKU4OZ4fwYWfa","roles":["owner","customer"]}
