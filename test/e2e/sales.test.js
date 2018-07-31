@@ -4,13 +4,15 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 const { Types } = require('mongoose');
 
-describe('Sales API', () => {
+describe.only('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
+        dropCollection('users');
+        dropCollection('bars');
     });
 
-    //let user;
+    let user;
     let token;
     beforeEach(() => {
         return request
@@ -24,7 +26,55 @@ describe('Sales API', () => {
             })
             .then(({ body }) => {
                 token = body.token;
-                //user = body.user;
+                user = body.user;
+            });
+    });
+
+    let lifeOfRiley;
+    let teardrop;
+    beforeEach(() => {
+        let bar = {
+            name: 'Life of Riley',
+            location: {
+                address: 'Somewhere in the Pearl',
+                city: 'Portland',
+                state: 'OR',
+                zip: '97777'
+            },
+            phone: '9711234567',
+            hours: 'All day err day',
+            owner: user._id
+        };
+        return request
+            .post('/api/bars')
+            .set('Authorization', token)
+            .send(bar)
+            .then(checkOk)
+            .then(({ body }) => {
+                lifeOfRiley = body;
+            });
+    });
+
+    beforeEach(() => {
+        let bar = {
+            name: 'Teardrop',
+            location: {
+                address: 'Also in the Pearl',
+                city: 'Portland',
+                state: 'OR',
+                zip: '97777'
+            },
+            phone: '5031234567',
+            hours: 'Lots of hours',
+            owner: user._id
+        };
+        return request
+            .post('/api/bars')
+            .set('Authorization', token)
+            .send(bar)
+            .then(checkOk)
+            .then(({ body }) => {
+                teardrop = body;
             });
     });
 
@@ -32,8 +82,9 @@ describe('Sales API', () => {
     beforeEach(() => {
         return request
             .post('/api/sales')
+            .set('Authorization', token)
             .send({
-                bar: Types.ObjectId(),
+                bar: teardrop._id,
                 customer: Types.ObjectId(), 
                 drinks: [{
                     type: 'beer',
@@ -57,7 +108,7 @@ describe('Sales API', () => {
             .post('/api/sales')
             .set('Authorization', token)
             .send({
-                bar: Types.ObjectId(),
+                bar: lifeOfRiley._id,
                 customer: Types.ObjectId(), 
                 drinks: [{
                     type: 'wine',
@@ -75,12 +126,12 @@ describe('Sales API', () => {
             .then(({ body }) => saleTwo = body);
     });
 
-
     it('POST a transaction', () => {
         assert.isOk(sale._id);
     });
 
-    it('GET a list of all sales/transactions', () => {
+    it.only('GET a list of all sales/transactions', () => {
+        console.log('TOKEN', token);
         return request
             .get('/api/sales')
             .set('Authorization', token)
