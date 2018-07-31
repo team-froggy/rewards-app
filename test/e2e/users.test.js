@@ -67,5 +67,21 @@ describe.only('Users API', () => {
             });
     });
     
+    it('deletes only own user profile', () => {
+        return request
+            .delete(`/api/users/${eastonJohn._id}`)
+            .set('authorization', token)
+            .then(checkOk)
+            .then(res => {
+                assert.deepEqual(res.body, { removed: true });
+                return request
+                    .get('/api/users')
+                    .set('Authorization', token);
+            })
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body, []);
+            });
+    });
    
 });
