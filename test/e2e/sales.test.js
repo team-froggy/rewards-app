@@ -169,7 +169,7 @@ describe('Sales API', () => {
             });
     });
 
-    it('GET a list of all sales specific to an individual bar', () => {
+    it.only('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
             .set('Authorization', token)
