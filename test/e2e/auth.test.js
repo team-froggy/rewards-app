@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 
 const { checkOk } = request;
 
-describe.only('Auth API', () => {
+describe('Auth API', () => {
 
     beforeEach(() => dropCollection('users'));
 
