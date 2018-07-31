@@ -41,5 +41,17 @@ describe.only('Users API', () => {
             .then(({ body }) => {
                 assert.deepEqual(body, [eastonJohn]);
             });
-    });        
+    });  
+    
+    it('gets a user by id', () => {
+        return request
+            .get(`/api/users/${eastonJohn._id}`)
+            .set('Authorization', token)
+            .then(({ body }) => {
+                eastonJohn = body;
+                assert.deepEqual(body, eastonJohn);
+            });
+    }); 
+    
+   
 });
