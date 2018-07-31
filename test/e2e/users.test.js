@@ -32,4 +32,14 @@ describe.only('Users API', () => {
     it('saves a user', () => {
         assert.isOk(eastonJohn._id);
     });
+
+    it ('gets a list of users', () => {
+        return request
+            .get('/api/users')
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body, [eastonJohn]);
+            });
+    });        
 });
