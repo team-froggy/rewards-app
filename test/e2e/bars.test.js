@@ -5,7 +5,7 @@ const { checkOk } = request;
 const { Types } = require('mongoose');
 const ensureOwner = require('../../lib/util/ensure-role')('owner');
 
-describe.only('Bars API', () => {
+describe('Bars API', () => {
 
     
     beforeEach(() => dropCollection('bars'));
