@@ -10,6 +10,24 @@ describe.only('Sales API', () => {
         dropCollection('sales');
     });
 
+    //let user;
+    let token;
+    beforeEach(() => {
+        return request
+            .post('/api/auth/signup')
+            .send({
+                name: 'Easton',
+                year: 1990,
+                email: 'easton@acl.com',
+                password: 'password',
+                roles: ['customer', 'owner', 'admin']
+            })
+            .then(({ body }) => {
+                token = body.token;
+                //user = body.user;
+            });
+    });
+
     let sale;
     beforeEach(() => {
         return request
@@ -37,6 +55,7 @@ describe.only('Sales API', () => {
     beforeEach(() => {
         return request
             .post('/api/sales')
+            .set('Authorization', token)
             .send({
                 bar: Types.ObjectId(),
                 customer: Types.ObjectId(), 
@@ -64,6 +83,7 @@ describe.only('Sales API', () => {
     it('GET a list of all sales/transactions', () => {
         return request
             .get('/api/sales')
+            .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
                 assert.deepEqual(body, [sale, saleTwo]);
@@ -73,6 +93,7 @@ describe.only('Sales API', () => {
     it('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
+            .set('Authorization', token)
             .then(({ body }) => {
                 assert.deepEqual(body, [sale]);
             });
