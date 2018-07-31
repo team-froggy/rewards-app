@@ -14,7 +14,7 @@ describe.only('Users API', () => {
             .post('/api/auth/signup')
             .send({
                 name: 'Easton John',
-                year: '2000',
+                year: 2000,
                 email: 'easton@email.com',
                 password: 'pwd123',
                 roles: ['customer']
@@ -52,6 +52,20 @@ describe.only('Users API', () => {
                 assert.deepEqual(body, eastonJohn);
             });
     }); 
+
+    it('updates only own user profile', () => {
+        eastonJohn.email = 'eastonJohn@email.com';
+        eastonJohn.year = 2002;
+        return request
+            .put(`/api/users/${eastonJohn._id}`)
+            .set('Authorization', token)
+            .send(eastonJohn)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body.email, eastonJohn.email);
+                assert.deepEqual(body.year,  eastonJohn.year); 
+            });
+    });
     
    
 });
