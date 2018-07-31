@@ -2,7 +2,6 @@ const { assert } = require('chai');
 const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
-const { Types } = require('mongoose');
 
 describe('Bars API', () => {
 
@@ -77,31 +76,6 @@ describe('Bars API', () => {
                 teardrop = body;
             });
     });
-
-    let sale;
-    beforeEach(() => {
-        return request
-            .post('/api/sales')
-            .send({
-                bar: Types.ObjectId(),
-                customer: Types.ObjectId(), 
-                drinks: [{
-                    type: 'beer',
-                    name:'Breakside IPA',
-                    price: 5,
-                    quantity: 2
-                }],
-                food: [{
-                    type: 'entree',
-                    price: 10,
-                    quantity: 1
-                }],
-                totalAmountSpent: 20
-            })
-            .then(({ body }) => sale = body);
-    });
-
-
 
     it('Saves a bar', () => {
         assert.isOk(lifeOfRiley);
