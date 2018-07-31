@@ -110,6 +110,7 @@ describe.only('Bars API', () => {
     it('Gets a list of bars', () => {
         return request
             .get('/api/bars')
+            .set('Authorization', token)
             .then(({ body }) => {
                 assert.deepEqual(body, [lifeOfRiley, teardrop]);
             });
@@ -118,6 +119,7 @@ describe.only('Bars API', () => {
     it('Gets a bar by _id', () => {
         return request
             .get(`/api/bars/${lifeOfRiley._id}`)
+            .set('Authorization', token)
             .then(({ body }) => {
                 assert.deepEqual(body, lifeOfRiley);
             });
@@ -129,6 +131,7 @@ describe.only('Bars API', () => {
         lifeOfRiley.location.city = 'London';
         return request
             .put(`/api/bars/${lifeOfRiley._id}`)
+            .set('Authorization', token)
             .send(lifeOfRiley)
             .then(checkOk)
             .then(({ body }) => {
@@ -140,10 +143,13 @@ describe.only('Bars API', () => {
     it('Deletes a bar if owner', () => {
         return request
             .delete(`/api/bars/${lifeOfRiley._id}`)
+            .set('Authorization', token)
             .then(checkOk)
             .then(res => {
                 assert.deepEqual(res.body, { removed: true });
-                return request.get('/api/bars');
+                return request
+                    .get('/api/bars')
+                    .set('Authorization', token);
             })
             .then(checkOk)
             .then(({ body }) => {
