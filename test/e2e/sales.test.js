@@ -169,7 +169,7 @@ describe('Sales API', () => {
             });
     });
 
-    it('GET a list of all sales specific to an individual bar', () => {
+    it.only('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
             .set('Authorization', token)
@@ -178,6 +178,40 @@ describe('Sales API', () => {
                 delete body[0].createdAt;
                 delete body[0].updatedAt;
                 assert.deepEqual(body, [makeSimple(teardrop, sale)]);
+            });
+    });
+
+    it('Updates a sales transaction if bar owner', () => {
+        sale.food[0].type = 'starter';
+        sale.totalAmountSpent = 77;
+        return request
+            .put(`/api/sales/${sale._id}`)
+            .set('Authorization', token)
+            .send(sale)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body.food.type, sale.food.type);
+                assert.deepEqual(body.totalAmountSpent, sale.totalAmountSpent);
+            });
+    });
+
+    it('Deletes sales transaction by business owner', () => {
+        return request
+            .delete(`/api/sales/${sale._id}`)
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(res => {
+                assert.deepEqual(res.body, { removed: true });
+                return request
+                    .get('/api/sales')
+                    .set('Authorization', token);
+            })
+            .then(checkOk)
+            .then(({ body }) => {
+                delete body[0].__v;
+                delete body[0].createdAt;
+                delete body[0].updatedAt;
+                assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo)]);
             });
     });
 });
