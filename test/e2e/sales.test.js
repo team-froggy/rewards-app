@@ -2,21 +2,90 @@ const { assert } = require('chai');
 const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
-const { Types } = require('mongoose');
+// const { Types } = require('mongoose');
 
-describe('Sales API', () => {
+describe.only('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
+        dropCollection('users');
+        dropCollection('bars');
+    });
+
+    let user;
+    let token;
+    beforeEach(() => {
+        return request
+            .post('/api/auth/signup')
+            .send({
+                name: 'Easton',
+                year: 1990,
+                email: 'easton@acl.com',
+                password: 'password',
+                roles: ['customer', 'owner', 'admin']
+            })
+            .then(({ body }) => {
+                token = body.token;
+                user = body.user;
+            });
+    });
+
+    let lifeOfRiley;
+    beforeEach(() => {
+        let bar = {
+            name: 'Life of Riley',
+            location: {
+                address: 'Somewhere in the Pearl',
+                city: 'Portland',
+                state: 'OR',
+                zip: '97777'
+            },
+            phone: '9711234567',
+            hours: 'All day err day',
+            owner: user._id
+        };
+        return request
+            .post('/api/bars')
+            .set('Authorization', token)
+            .send(bar)
+            .then(checkOk)
+            .then(({ body }) => {
+                lifeOfRiley = body;
+            });
+    });
+
+    let teardrop;
+    beforeEach(() => {
+        let bar = {
+            name: 'Teardrop',
+            location: {
+                address: 'Also in the Pearl',
+                city: 'Portland',
+                state: 'OR',
+                zip: '97777'
+            },
+            phone: '5031234567',
+            hours: 'Lots of hours',
+            owner: user._id
+        };
+        return request
+            .post('/api/bars')
+            .set('Authorization', token)
+            .send(bar)
+            .then(checkOk)
+            .then(({ body }) => {
+                teardrop = body;
+            });
     });
 
     let sale;
     beforeEach(() => {
         return request
             .post('/api/sales')
+            .set('Authorization', token)
             .send({
-                bar: Types.ObjectId(),
-                customer: Types.ObjectId(), 
+                bar: teardrop._id,
+                customer: user._id, 
                 drinks: [{
                     type: 'beer',
                     name:'Breakside IPA',
@@ -37,9 +106,10 @@ describe('Sales API', () => {
     beforeEach(() => {
         return request
             .post('/api/sales')
+            .set('Authorization', token)
             .send({
-                bar: Types.ObjectId(),
-                customer: Types.ObjectId(), 
+                bar: lifeOfRiley._id,
+                customer: user._id, 
                 drinks: [{
                     type: 'wine',
                     name:'Merlot',
@@ -56,25 +126,52 @@ describe('Sales API', () => {
             .then(({ body }) => saleTwo = body);
     });
 
+    const makeSimple = (bar, sale) => {
+        const simple = {
+            _id: sale._id,
+            bar: {
+                _id: bar._id,
+                name: bar.name
+            },
+            customer: {
+                _id: user._id,
+                name: user.name,
+                email: user.email
+            },
+            totalAmountSpent: sale.totalAmountSpent
+        };
+        if(sale.drinks) {
+            simple.drinks = sale.drinks;
+        }
+        if(sale.food) {
+            simple.food = sale.food;
+        }
+        return simple;
+    };
 
     it('POST a transaction', () => {
         assert.isOk(sale._id);
     });
 
-    it('GET a list of all sales/transactions', () => {
+    it('GET a list of all sales/transactions specific to bar owner', () => {
         return request
             .get('/api/sales')
+            .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
                 assert.deepEqual(body, [sale, saleTwo]);
             });
     });
 
-    it('GET a list of all sales specific to an individual bar', () => {
+    it.only('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
+            .set('Authorization', token)
             .then(({ body }) => {
-                assert.deepEqual(body, [sale]);
+                delete body[0].__v;
+                delete body[0].createdAt;
+                delete body[0].updatedAt;
+                assert.deepEqual(body, [makeSimple(teardrop, sale)]);
             });
     });
 });

@@ -3,7 +3,7 @@ const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
 
-describe.only('Bars API', () => {
+describe('Bars API', () => {
 
     
     beforeEach(() => dropCollection('bars'));
