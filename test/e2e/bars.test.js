@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 const { Types } = require('mongoose');
 
-describe.only('Bars API', () => {
+describe('Bars API', () => {
 
     
     beforeEach(() => dropCollection('bars'));
