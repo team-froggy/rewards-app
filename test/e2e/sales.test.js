@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 // const { Types } = require('mongoose');
 
-describe.only('Sales API', () => {
+describe('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
@@ -159,11 +159,17 @@ describe.only('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                assert.deepEqual(body, [sale, saleTwo]);
+                delete body[0].__v;
+                delete body[0].createdAt;
+                delete body[0].updatedAt;
+                delete body[1].__v;
+                delete body[1].createdAt;
+                delete body[1].updatedAt;
+                assert.deepEqual(body, [makeSimple(teardrop, sale), makeSimple(lifeOfRiley, saleTwo)]);
             });
     });
 
-    it.only('GET a list of all sales specific to an individual bar', () => {
+    it('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
             .set('Authorization', token)
