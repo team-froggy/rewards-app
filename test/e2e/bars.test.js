@@ -3,12 +3,32 @@ const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
 const { Types } = require('mongoose');
-const ensureOwner = require('../../lib/util/ensure-role')('owner');
 
 describe.only('Bars API', () => {
 
     
     beforeEach(() => dropCollection('bars'));
+    beforeEach(() => dropCollection('sales'));
+    beforeEach(() => dropCollection('users'));
+
+    let token;
+    let user;
+    beforeEach(() => {
+        return request
+            .post('/api/auth/signup')
+            .send({
+                name: 'Easton John',
+                year: 2000,
+                email: 'easton@email.com',
+                password: 'pwd123',
+                roles: ['customer', 'owner', 'admin']
+            })
+            .then(checkOk)
+            .then(({ body }) => {
+                token = body.token;
+                user = body.user;
+            });
+    });
     
     let lifeOfRiley;
     let teardrop;
@@ -23,10 +43,11 @@ describe.only('Bars API', () => {
             },
             phone: '9711234567',
             hours: 'All day err day',
-            owner: Types.ObjectId()
+            owner: user._id
         };
         return request
             .post('/api/bars')
+            .set('Authorization', token)
             .send(bar)
             .then(checkOk)
             .then(({ body }) => {
@@ -45,16 +66,42 @@ describe.only('Bars API', () => {
             },
             phone: '5031234567',
             hours: 'Lots of hours',
-            owner: Types.ObjectId()
+            owner: user._id
         };
         return request
             .post('/api/bars')
+            .set('Authorization', token)
             .send(bar)
             .then(checkOk)
             .then(({ body }) => {
                 teardrop = body;
             });
     });
+
+    let sale;
+    beforeEach(() => {
+        return request
+            .post('/api/sales')
+            .send({
+                bar: Types.ObjectId(),
+                customer: Types.ObjectId(), 
+                drinks: [{
+                    type: 'beer',
+                    name:'Breakside IPA',
+                    price: 5,
+                    quantity: 2
+                }],
+                food: [{
+                    type: 'entree',
+                    price: 10,
+                    quantity: 1
+                }],
+                totalAmountSpent: 20
+            })
+            .then(({ body }) => sale = body);
+    });
+
+
 
     it('Saves a bar', () => {
         assert.isOk(lifeOfRiley);
