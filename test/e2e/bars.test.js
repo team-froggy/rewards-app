@@ -3,12 +3,32 @@ const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
 const { Types } = require('mongoose');
-const ensureOwner = require('../../lib/util/ensure-role')('owner');
 
 describe('Bars API', () => {
 
     
     beforeEach(() => dropCollection('bars'));
+    beforeEach(() => dropCollection('sales'));
+    beforeEach(() => dropCollection('users'));
+
+    let token;
+    let user;
+    beforeEach(() => {
+        return request
+            .post('/api/auth/signup')
+            .send({
+                name: 'Easton John',
+                year: 2000,
+                email: 'easton@email.com',
+                password: 'pwd123',
+                roles: ['customer', 'owner', 'admin']
+            })
+            .then(checkOk)
+            .then(({ body }) => {
+                token = body.token;
+                user = body.user;
+            });
+    });
     
     let lifeOfRiley;
     let teardrop;
@@ -23,10 +43,11 @@ describe('Bars API', () => {
             },
             phone: '9711234567',
             hours: 'All day err day',
-            owner: Types.ObjectId()
+            owner: user._id
         };
         return request
             .post('/api/bars')
+            .set('Authorization', token)
             .send(bar)
             .then(checkOk)
             .then(({ body }) => {
@@ -45,16 +66,42 @@ describe('Bars API', () => {
             },
             phone: '5031234567',
             hours: 'Lots of hours',
-            owner: Types.ObjectId()
+            owner: user._id
         };
         return request
             .post('/api/bars')
+            .set('Authorization', token)
             .send(bar)
             .then(checkOk)
             .then(({ body }) => {
                 teardrop = body;
             });
     });
+
+    let sale;
+    beforeEach(() => {
+        return request
+            .post('/api/sales')
+            .send({
+                bar: Types.ObjectId(),
+                customer: Types.ObjectId(), 
+                drinks: [{
+                    type: 'beer',
+                    name:'Breakside IPA',
+                    price: 5,
+                    quantity: 2
+                }],
+                food: [{
+                    type: 'entree',
+                    price: 10,
+                    quantity: 1
+                }],
+                totalAmountSpent: 20
+            })
+            .then(({ body }) => sale = body);
+    });
+
+
 
     it('Saves a bar', () => {
         assert.isOk(lifeOfRiley);
@@ -63,6 +110,7 @@ describe('Bars API', () => {
     it('Gets a list of bars', () => {
         return request
             .get('/api/bars')
+            .set('Authorization', token)
             .then(({ body }) => {
                 assert.deepEqual(body, [lifeOfRiley, teardrop]);
             });
@@ -71,6 +119,7 @@ describe('Bars API', () => {
     it('Gets a bar by _id', () => {
         return request
             .get(`/api/bars/${lifeOfRiley._id}`)
+            .set('Authorization', token)
             .then(({ body }) => {
                 assert.deepEqual(body, lifeOfRiley);
             });
@@ -82,6 +131,7 @@ describe('Bars API', () => {
         lifeOfRiley.location.city = 'London';
         return request
             .put(`/api/bars/${lifeOfRiley._id}`)
+            .set('Authorization', token)
             .send(lifeOfRiley)
             .then(checkOk)
             .then(({ body }) => {
@@ -93,10 +143,13 @@ describe('Bars API', () => {
     it('Deletes a bar if owner', () => {
         return request
             .delete(`/api/bars/${lifeOfRiley._id}`)
+            .set('Authorization', token)
             .then(checkOk)
             .then(res => {
                 assert.deepEqual(res.body, { removed: true });
-                return request.get('/api/bars');
+                return request
+                    .get('/api/bars')
+                    .set('Authorization', token);
             })
             .then(checkOk)
             .then(({ body }) => {
