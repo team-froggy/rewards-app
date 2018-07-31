@@ -3,7 +3,7 @@ const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
 
-describe('Bars API', () => {
+describe.only('Bars API', () => {
 
     
     beforeEach(() => dropCollection('bars'));
@@ -50,6 +50,9 @@ describe('Bars API', () => {
             .send(bar)
             .then(checkOk)
             .then(({ body }) => {
+                delete body.__v;
+                delete body.createdAt;
+                delete body.updatedAt;
                 lifeOfRiley = body;
             });
     });
@@ -73,6 +76,9 @@ describe('Bars API', () => {
             .send(bar)
             .then(checkOk)
             .then(({ body }) => {
+                delete body.__v;
+                delete body.createdAt;
+                delete body.updatedAt;
                 teardrop = body;
             });
     });
@@ -86,7 +92,8 @@ describe('Bars API', () => {
             .get('/api/bars')
             .set('Authorization', token)
             .then(({ body }) => {
-                assert.deepEqual(body, [lifeOfRiley, teardrop]);
+                assert.deepEqual(body[0].name, lifeOfRiley.name);
+                assert.deepEqual(body[1].name, teardrop.name);
             });
     });
 
@@ -95,7 +102,10 @@ describe('Bars API', () => {
             .get(`/api/bars/${lifeOfRiley._id}`)
             .set('Authorization', token)
             .then(({ body }) => {
-                assert.deepEqual(body, lifeOfRiley);
+                delete body.__v;
+                delete body.createdAt;
+                delete body.updatedAt;
+                assert.deepEqual(body.name, lifeOfRiley.name);
             });
             
     });
@@ -127,7 +137,7 @@ describe('Bars API', () => {
             })
             .then(checkOk)
             .then(({ body }) => {
-                assert.deepEqual(body, [teardrop]);
+                assert.deepEqual(body[0].name, teardrop.name);
             });
     });
 
