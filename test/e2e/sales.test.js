@@ -2,7 +2,7 @@ const { assert } = require('chai');
 const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
-const { Types } = require('mongoose');
+// const { Types } = require('mongoose');
 
 describe.only('Sales API', () => {
     
@@ -31,7 +31,6 @@ describe.only('Sales API', () => {
     });
 
     let lifeOfRiley;
-    let teardrop;
     beforeEach(() => {
         let bar = {
             name: 'Life of Riley',
@@ -55,6 +54,7 @@ describe.only('Sales API', () => {
             });
     });
 
+    let teardrop;
     beforeEach(() => {
         let bar = {
             name: 'Teardrop',
@@ -85,7 +85,7 @@ describe.only('Sales API', () => {
             .set('Authorization', token)
             .send({
                 bar: teardrop._id,
-                customer: Types.ObjectId(), 
+                customer: user._id, 
                 drinks: [{
                     type: 'beer',
                     name:'Breakside IPA',
@@ -109,7 +109,7 @@ describe.only('Sales API', () => {
             .set('Authorization', token)
             .send({
                 bar: lifeOfRiley._id,
-                customer: Types.ObjectId(), 
+                customer: user._id, 
                 drinks: [{
                     type: 'wine',
                     name:'Merlot',
@@ -126,12 +126,34 @@ describe.only('Sales API', () => {
             .then(({ body }) => saleTwo = body);
     });
 
+    const makeSimple = (bar, sale) => {
+        const simple = {
+            _id: sale._id,
+            bar: {
+                _id: bar._id,
+                name: bar.name
+            },
+            customer: {
+                _id: user._id,
+                name: user.name,
+                email: user.email
+            },
+            totalAmountSpent: sale.totalAmountSpent
+        };
+        if(sale.drinks) {
+            simple.drinks = sale.drinks;
+        }
+        if(sale.food) {
+            simple.food = sale.food;
+        }
+        return simple;
+    };
+
     it('POST a transaction', () => {
         assert.isOk(sale._id);
     });
 
-    it.only('GET a list of all sales/transactions', () => {
-        console.log('TOKEN', token);
+    it('GET a list of all sales/transactions specific to bar owner', () => {
         return request
             .get('/api/sales')
             .set('Authorization', token)
@@ -141,12 +163,15 @@ describe.only('Sales API', () => {
             });
     });
 
-    it('GET a list of all sales specific to an individual bar', () => {
+    it.only('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
             .set('Authorization', token)
             .then(({ body }) => {
-                assert.deepEqual(body, [sale]);
+                delete body[0].__v;
+                delete body[0].createdAt;
+                delete body[0].updatedAt;
+                assert.deepEqual(body, [makeSimple(teardrop, sale)]);
             });
     });
 });
