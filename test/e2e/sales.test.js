@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 // const { Types } = require('mongoose');
 
-describe('Sales API', () => {
+describe.only('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
@@ -181,6 +181,17 @@ describe('Sales API', () => {
             });
     });
 
+    it('GET the average ticket amount spent by customer', () => {
+        return request
+            .get('api/sales/average-ticket-amt')
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.isOk(body[0].averageTicketAmt);
+            });
+    });
+
+
     it('Updates a sales transaction if bar owner', () => {
         sale.food[0].type = 'starter';
         sale.totalAmountSpent = 77;
@@ -214,4 +225,6 @@ describe('Sales API', () => {
                 assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo)]);
             });
     });
+
 });
+
