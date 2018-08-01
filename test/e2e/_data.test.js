@@ -14,10 +14,12 @@ describe.only('Seed data API', () => {
     // beforeEach(() => dropCollection('users'));
     // beforeEach(() => dropCollection('sales'));
 
+    mongodb://heroku_p43lq6vx:q7k078nvikkva4bmmk74no52fj@ds263791.mlab.com:63791/heroku_p43lq6vx
+
     beforeEach(() => {
-        execSync('mongoimport -h ds163781.mlab.com:63781 -d heroku_llqdz89v -c users -u heroku_llqdz89v -p o26t22hmm7r2a6g9r53g5adrdf --drop --file lib/data/users-data.json');
-        execSync('mongoimport -h ds163781.mlab.com:63781 -d heroku_llqdz89v -c bars -u heroku_llqdz89v -p o26t22hmm7r2a6g9r53g5adrdf --drop --file lib/data/bars-data.json');
-        execSync('mongoimport -h ds163781.mlab.com:63781 -d heroku_llqdz89v -c sales -u heroku_llqdz89v -p o26t22hmm7r2a6g9r53g5adrdf --drop --file lib/data/sales-data.json');
+        execSync('mongoimport -h ds263791.mlab.com:63791 -d heroku_p43lq6vx -c users -u heroku_p43lq6vx -p q7k078nvikkva4bmmk74no52fj --drop --file lib/data/users-data.json');
+        execSync('mongoimport -h ds263791.mlab.com:63791 -d heroku_p43lq6vx -c bars -u heroku_p43lq6vx -p q7k078nvikkva4bmmk74no52fj --drop --file lib/data/bars-data.json');
+        execSync('mongoimport -h ds263791.mlab.com:63791 -d heroku_p43lq6vx -c sales -u heroku_p43lq6vx -p q7k078nvikkva4bmmk74no52fj --drop --file lib/data/sales-data.json');
         // execSync(`mongoimport --db ${mongoose.connection.name} --collection users --drop --file ${usersDataFile}`);
         // execSync(`mongoimport --db ${mongoose.connection.name} --collection bars  --drop --file ${barsDataFile}`);
         // execSync(`mongoimport --db ${mongoose.connection.name} --collection sales --drop --file ${salesDataFile}`);
