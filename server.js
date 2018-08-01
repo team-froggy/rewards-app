@@ -7,7 +7,7 @@ const connect = require('./lib/util/connect');
 connect(MONGODB_URI);
 
 const server = http.createServer(app);
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 server.listen(port, () => {
     // eslint-disable-next-line

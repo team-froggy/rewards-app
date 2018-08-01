@@ -8,16 +8,19 @@ const { dropCollection } = require('./_db');
 const request = require('./request');
 const { checkOk } = request;
 
-describe('Seed data API', () => {
+describe.only('Seed data API', () => {
 
-    beforeEach(() => dropCollection('bars'));
-    beforeEach(() => dropCollection('users'));
-    beforeEach(() => dropCollection('sales'));
+    // beforeEach(() => dropCollection('bars'));
+    // beforeEach(() => dropCollection('users'));
+    // beforeEach(() => dropCollection('sales'));
 
     beforeEach(() => {
-        execSync(`mongoimport --db ${mongoose.connection.name} --collection users --file ${usersDataFile}`);
-        execSync(`mongoimport --db ${mongoose.connection.name} --collection bars --file ${barsDataFile}`);
-        execSync(`mongoimport --db ${mongoose.connection.name} --collection sales --file ${salesDataFile}`);
+        execSync('mongoimport -h ds163781.mlab.com:63781 -d heroku_llqdz89v -c users -u heroku_llqdz89v -p o26t22hmm7r2a6g9r53g5adrdf --drop --file lib/data/users-data.json');
+        execSync('mongoimport -h ds163781.mlab.com:63781 -d heroku_llqdz89v -c bars -u heroku_llqdz89v -p o26t22hmm7r2a6g9r53g5adrdf --drop --file lib/data/bars-data.json');
+        execSync('mongoimport -h ds163781.mlab.com:63781 -d heroku_llqdz89v -c sales -u heroku_llqdz89v -p o26t22hmm7r2a6g9r53g5adrdf --drop --file lib/data/sales-data.json');
+        // execSync(`mongoimport --db ${mongoose.connection.name} --collection users --drop --file ${usersDataFile}`);
+        // execSync(`mongoimport --db ${mongoose.connection.name} --collection bars  --drop --file ${barsDataFile}`);
+        // execSync(`mongoimport --db ${mongoose.connection.name} --collection sales --drop --file ${salesDataFile}`);
     });
     
 
