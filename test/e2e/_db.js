@@ -1,5 +1,7 @@
+require('dotenv').config();
+const MONGODB_URI = process.env.MONGODB_URI;
 const connect = require('../../lib/util/connect');
-connect('mongodb://localhost:27017/team_froggy_test');
+connect(MONGODB_URI);
 const mongoose = require('mongoose');
 
 after(() => {
