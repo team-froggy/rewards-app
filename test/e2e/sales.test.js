@@ -18,6 +18,7 @@ describe('Sales API', () => {
         return request
             .post('/api/auth/signup')
             .send({
+                _id: '5b5f6a4cdf814a1d71aea3c8',
                 name: 'Easton',
                 year: 1990,
                 email: 'easton@acl.com',
@@ -166,6 +167,16 @@ describe('Sales API', () => {
                 delete body[1].createdAt;
                 delete body[1].updatedAt;
                 assert.deepEqual(body, [makeSimple(teardrop, sale), makeSimple(lifeOfRiley, saleTwo)]);
+            });
+    });
+
+    it('GETS total revenue by bar owner', () => {
+        return request
+            .get('/api/sales/revenue-by-owner')
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.isOk(body[0].totalSales);
             });
     });
 
