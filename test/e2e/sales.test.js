@@ -206,6 +206,26 @@ describe.only('Sales API', () => {
         }
     ];
 
+    // const lifeOfRileyInfo = (bar) => {
+    //     const info = { 
+    //         _id: { _id: bar._id, name: bar.name },
+    //         totalRevenue: 55,
+    //         totalTickets: 2,
+    //         avgTicketValue: 27.5 
+    //     };
+    //     return info;
+    // };
+
+    // const teardropInfo = (bar) => {
+    //     const info = { 
+    //         _id: { _id: bar._id, name: bar.name },
+    //         totalRevenue: 55,
+    //         totalTickets: 2,
+    //         avgTicketValue: 27.5 
+    //     };
+    //     return info;
+    // };
+
     it('POST a transaction', () => {
         assert.isOk(sale._id);
     });
@@ -229,7 +249,7 @@ describe.only('Sales API', () => {
             });
     });
 
-    it('GETS total revenue by bar owner', () => {
+    it('GETS total revenue of all bars (if owner)', () => {
         return request
             .get('/api/sales/revenue-by-owner')
             .set('Authorization', token)
@@ -239,7 +259,17 @@ describe.only('Sales API', () => {
             });
     });
 
-    it('GET a list of all sales specific to an individual bar', () => {
+    it('GETS total revenue to a specific bar (if owner)', () => {
+        return request
+            .get(`/api/sales/bar-revenue/${lifeOfRiley._id}`)
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body, [{ _id: 'Revenue', totalSales: 55 }]);
+            });
+    });
+
+    it('GET a list of all sales specific to an individual bar (if owner)', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
             .set('Authorization', token)
@@ -254,7 +284,7 @@ describe.only('Sales API', () => {
             });
     });
 
-    it('GET premium customers', () => {
+    it('GET premium customers (if owner)', () => {
         return request
             .get(`/api/sales/premium-customers/${lifeOfRiley._id}`)
             .set('Authorization', token)
@@ -264,8 +294,7 @@ describe.only('Sales API', () => {
             });
     });
 
-
-    it('Updates a sales transaction if bar owner', () => {
+    it('Updates a sales transaction (if owner)', () => {
         sale.food[0].type = 'starter';
         sale.totalAmountSpent = 77;
         return request
@@ -279,7 +308,18 @@ describe.only('Sales API', () => {
             });
     });
 
-    it('Deletes sales transaction by business owner', () => {
+    it.skip('GETS total revenue of all bars (if admin)', () => {
+        return request
+            .get('/api/sales/sales-by-bar')
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(({ body }) => {
+                console.log('BODY!!!!', body);
+                assert.deepEqual(body, [lifeOfRileyInfo(lifeOfRiley), teardropInfo(teardrop)]);
+            });
+    });
+
+    it('Deletes sales transaction by business (if owner)', () => {
         return request
             .delete(`/api/sales/${sale._id}`)
             .set('Authorization', token)
