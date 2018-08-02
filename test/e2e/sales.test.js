@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 // const { Types } = require('mongoose');
 
-describe('Sales API', () => {
+describe.only('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
@@ -279,7 +279,7 @@ describe('Sales API', () => {
             });
     });
 
-    it.skip('Deletes sales transaction by business owner', () => {
+    it('Deletes sales transaction by business owner', () => {
         return request
             .delete(`/api/sales/${sale._id}`)
             .set('Authorization', token)
