@@ -27,7 +27,7 @@ describe('Sales API', () => {
             })
             .then(({ body }) => {
                 token = body.token;
-                console.log(token);
+                console.log('EASTONS', token);
                 user = body.user;
             });
     });

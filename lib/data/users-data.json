@@ -2,3 +2,16 @@
 {"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c5"},"name":"Carmen","year":1970,"email":"carmen@acl-teamfroggy.com","hash":"$2a$08$h2Sd.yLrFxXYhlh/Tbkmzu2LoVPGlB2PvNZdamAzylbl19H3VILZS","roles":["admin","customer"]}
 {"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c6"},"name":"Journey","year":2012,"email":"journey@acl-teamfroggy.com","hash":"$2a$08$sntzRA7iAujwOItNAul4iOhhr3R2ME8FZ0wQQeGlGzSA.i8TqQw8y","roles":["customer"]}
 {"_id":{"$oid":"5b5f6a4cdf814a1d71aea3c7"},"name":"Kevin","year":1970,"email":"kevin@acl-teamfroggy.com","hash":"$2a$08$bEiYw5Mnz3R1Tolx2UQwLuE2I2hDz0Xkxvm8MfHTWKgORiow3MmkC","roles":["admin","customer"]}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b361"},"roles":["customer"],"name":"Stewie","year":1989,"email":"stewie@portland.com","hash":"$2a$08$DZ1cOv8aS14hoaHRvmxYbOvXhfAL5TIpHmmXtayprEbP0cC7UMIFe"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b362"},"roles":["customer"],"name":"Peter","year":1987,"email":"peter@portland.com","hash":"$2a$08$DXtFRSFyGZuq9jjaL2p3hulEflrAldsE6IK86mjyoedWe9vYlec8i"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b363"},"roles":["customer"],"name":"Cheryl","year":1992,"email":"cheryl@portland.com","hash":"$2a$08$f1Wo.KZeGF./Irfjx5DjguBdxH8AFItTu48nBoclFWxejkm2rBHH."}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b364"},"roles":["customer"],"name":"Pam","year":1985,"email":"pam@portland.com","hash":"$2a$08$Aj2LnFgvz.68FTSwFZcntOoqHZ9/8spknIOFVu9QxzhkmHUPogcr6"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b365"},"roles":["customer"],"name":"Deadpool","year":1980,"email":"deadpool@portland.com","hash":"$2a$08$arUi9VM.ewXkUWgh6IZQ1OSwtrg7PGLldhofzJWccGJiUFnVxwKAS"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b366"},"roles":["customer"],"name":"Rocket","year":1980,"email":"rocket@portland.com","hash":"$2a$08$zNo4O9WTunqomlK7f3hFnuPOSfg5OQjvXmSe43J8Q.WCL3Tta5gT6"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b367"},"roles":["customer"],"name":"Groot","year":1979,"email":"groot@portland.com","hash":"$2a$08$YTmITwm1yvBgftU0QRhuQOMNp756taXDAl9gLbCfCDWLCqtGxbxlC"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b368"},"roles":["customer"],"name":"Gamora","year":1979,"email":"gamora@portland.com","hash":"$2a$08$voSqmPgFGNWIuP0X74eTlupEZwRBu/NEDgPGHdB6QebvWMwjACKUu"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b369"},"roles":["customer"],"name":"Star-Lord","year":1983,"email":"starlord@portland.com","hash":"$2a$08$xCZRHP9iYdvWzbwAB9R5h.ZBbxfbJBFBIeapp1E7OssIGSc/riee2"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b36a"},"roles":["customer"],"name":"Drax","year":1975,"email":"drax@portland.com","hash":"$2a$08$ghy1HqFjLBm8HI3Cl2UTYeFpcnFIveyJjephHRj5srxiJM4pd9B8u"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b36b"},"roles":["customer"],"name":"Archer","year":1973,"email":"archer@portland.com","hash":"$2a$08$Z8fWa/EZO4hzphFZX2Qzm.gDvGYQkwAMh77jwqCuYkrEiQFcI4ZA2"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b36c"},"roles":["customer"],"name":"Lana","year":1975,"email":"lana@portland.com","hash":"$2a$08$Er8dQdevYg1JfUOmBITdkO1MT8xt96SBR98f0ojuNFwx75sx0qSe6"}
+{"_id":{"$oid":"5b6289f4eb116260f3c0b36d"},"roles":["customer"],"name":"Nick","year":1995,"email":"nick@portland.com","hash":"$2a$08$Wjh5Zbwb0N/R1fI4XHjiMuJ9m14Ve/lH.rFRPSZCpAI9q/QMJUO3K"}
