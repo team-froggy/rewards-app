@@ -31,22 +31,6 @@ describe.only('Sales API', () => {
                 easton = body.user;
             });
     });
-    let kevin;
-    beforeEach(() => {
-        return request
-            .post('/api/auth/signup')
-            .send({
-                name: 'Kevin',
-                year: 1990,
-                email: 'kevin@acl.com',
-                password: 'kevin123',
-                roles: ['customer', 'owner', 'admin']
-            })
-            .then(({ body }) => {
-                console.log('KEVINS', token);
-                kevin = body.user;
-            });
-    });
 
     let lifeOfRiley;
     beforeEach(() => {
@@ -276,7 +260,6 @@ describe.only('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                console.log('BODDYYYYYYY!', body);
                 assert.deepEqual(body, customerInfo);
             });
     });
