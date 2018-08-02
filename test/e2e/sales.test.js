@@ -12,7 +12,7 @@ describe('Sales API', () => {
         dropCollection('bars');
     });
 
-    let user;
+    let easton;
     let token;
     beforeEach(() => {
         return request
@@ -28,7 +28,23 @@ describe('Sales API', () => {
             .then(({ body }) => {
                 token = body.token;
                 console.log('EASTONS', token);
-                user = body.user;
+                easton = body.user;
+            });
+    });
+    let kevin;
+    beforeEach(() => {
+        return request
+            .post('/api/auth/signup')
+            .send({
+                name: 'Kevin',
+                year: 1990,
+                email: 'kevin@acl.com',
+                password: 'kevin123',
+                roles: ['customer', 'owner', 'admin']
+            })
+            .then(({ body }) => {
+                console.log('KEVINS', token);
+                kevin = body.user;
             });
     });
 
@@ -44,7 +60,7 @@ describe('Sales API', () => {
             },
             phone: '9711234567',
             hours: 'All day err day',
-            owner: user._id
+            owner: easton._id
         };
         return request
             .post('/api/bars')
@@ -68,7 +84,7 @@ describe('Sales API', () => {
             },
             phone: '5031234567',
             hours: 'Lots of hours',
-            owner: user._id
+            owner: easton._id
         };
         return request
             .post('/api/bars')
@@ -87,19 +103,25 @@ describe('Sales API', () => {
             .set('Authorization', token)
             .send({
                 bar: teardrop._id,
-                customer: user._id, 
+                customer: easton._id, 
                 drinks: [{
                     type: 'beer',
                     name:'Breakside IPA',
                     price: 5,
                     quantity: 2
+                },
+                {
+                    type: 'beer',
+                    name:'Vortex IPA',
+                    price: 5,
+                    quantity: 1
                 }],
                 food: [{
                     type: 'entree',
                     price: 10,
                     quantity: 1
                 }],
-                totalAmountSpent: 20
+                totalAmountSpent: 30
             })
             .then(({ body }) => sale = body);
     });
@@ -111,7 +133,7 @@ describe('Sales API', () => {
             .set('Authorization', token)
             .send({
                 bar: lifeOfRiley._id,
-                customer: user._id, 
+                customer: easton._id, 
                 drinks: [{
                     type: 'wine',
                     name:'Merlot',
@@ -122,13 +144,18 @@ describe('Sales API', () => {
                     type: 'dessert',
                     price: 5,
                     quantity: 1
+                },
+                {
+                    type: 'starter',
+                    price: 5,
+                    quantity: 2
                 }],
-                totalAmountSpent: 15
+                totalAmountSpent: 25
             })
             .then(({ body }) => saleTwo = body);
     });
 
-    const makeSimple = (bar, sale) => {
+    const makeSimple = (bar, sale, user) => {
         const simple = {
             _id: sale._id,
             bar: {
@@ -151,6 +178,19 @@ describe('Sales API', () => {
         return simple;
     };
 
+    const customerInfo = [
+        { _id: {
+            _id: '5b5f6a4cdf814a1d71aea3c8',
+            name: 'Easton',
+            email: 'easton@acl.com' },
+        totalTickets: 2,
+        totalAmtSpent: 55,
+        avgAmtSpent: 27.5,
+        min: 25,
+        max: 30,
+        }
+    ];
+
     it('POST a transaction', () => {
         assert.isOk(sale._id);
     });
@@ -167,7 +207,7 @@ describe('Sales API', () => {
                 delete body[1].__v;
                 delete body[1].createdAt;
                 delete body[1].updatedAt;
-                assert.deepEqual(body, [makeSimple(teardrop, sale), makeSimple(lifeOfRiley, saleTwo)]);
+                assert.deepEqual(body, [makeSimple(teardrop, sale, easton), makeSimple(lifeOfRiley, saleTwo, easton)]);
             });
     });
 
@@ -189,7 +229,7 @@ describe('Sales API', () => {
                 delete body[0].__v;
                 delete body[0].createdAt;
                 delete body[0].updatedAt;
-                assert.deepEqual(body, [makeSimple(teardrop, sale)]);
+                assert.deepEqual(body, [makeSimple(teardrop, sale, easton)]);
             });
     });
 
@@ -199,7 +239,8 @@ describe('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                assert.isOk(body[0].averageTicketAmt);
+                console.log('BODDYYYYYYY!', body);
+                assert.deepEqual(body, customerInfo);
             });
     });
 
@@ -234,7 +275,7 @@ describe('Sales API', () => {
                 delete body[0].__v;
                 delete body[0].createdAt;
                 delete body[0].updatedAt;
-                assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo)]);
+                assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo, easton)]);
             });
     });
 
