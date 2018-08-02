@@ -206,25 +206,25 @@ describe.only('Sales API', () => {
         }
     ];
 
-    // const lifeOfRileyInfo = (bar) => {
-    //     const info = { 
-    //         _id: { _id: bar._id, name: bar.name },
-    //         totalRevenue: 55,
-    //         totalTickets: 2,
-    //         avgTicketValue: 27.5 
-    //     };
-    //     return info;
-    // };
+    const lifeOfRileyInfo = (bar) => {
+        const info = { 
+            _id: { _id: bar._id, name: bar.name },
+            totalRevenue: 55,
+            totalTickets: 2,
+            avgTicketValue: 27.5 
+        };
+        return info;
+    };
 
-    // const teardropInfo = (bar) => {
-    //     const info = { 
-    //         _id: { _id: bar._id, name: bar.name },
-    //         totalRevenue: 55,
-    //         totalTickets: 2,
-    //         avgTicketValue: 27.5 
-    //     };
-    //     return info;
-    // };
+    const teardropInfo = (bar) => {
+        const info = { 
+            _id: { _id: bar._id, name: bar.name },
+            totalRevenue: 30,
+            totalTickets: 1,
+            avgTicketValue: 30 
+        };
+        return info;
+    };
 
     it('POST a transaction', () => {
         assert.isOk(sale._id);
@@ -308,13 +308,12 @@ describe.only('Sales API', () => {
             });
     });
 
-    it.skip('GETS total revenue of all bars (if admin)', () => {
+    it('GETS total revenue of all bars (if admin)', () => {
         return request
             .get('/api/sales/sales-by-bar')
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                console.log('BODY!!!!', body);
                 assert.deepEqual(body, [lifeOfRileyInfo(lifeOfRiley), teardropInfo(teardrop)]);
             });
     });
