@@ -16,6 +16,1317 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d6",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "beer",
+        "name": "Deschutes The Abyss",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 10,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 30
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d6",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "beer",
+        "name": " The Commons Urban Farmhouse Ale",
+        "price": 6,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 11
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d6",
+    "customer": "5b6289f4eb116260f3c0b369",
+    "drinks": [{
+        "type": "beer",
+        "name": "Boneyard Hop Venom",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 10,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 22
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d6",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "beer",
+        "name": "Cascade Sang Noir",
+        "price": 6,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 4,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "beer",
+        "name": "Double Mountain IRA",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 15
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "beer",
+        "name": "Heater Allen Pilsner",
+        "price": 5,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 15
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "beer",
+        "name": "Boneyard RPM IPA",
+        "price": 6,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 23
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "beer",
+        "name": "Fort George Vortex IPA",
+        "price": 6,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "beer",
+        "name": "Burnside Brewing Burnside Stout",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 17
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 11
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 15
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "wine",
+        "name": "Sauvignon blanc",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 22
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 9,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 19
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "wine",
+        "name": "Cabernet sauvignon",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 12
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 17
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "wine",
+        "name": "Zinfandel",
+        "price": 6,
+        "quantity": 2
+    },
+    {
+        "type": "cocktail",
+        "name": "Margarita",
+        "price": 8,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 25
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "wine",
+        "name": "Zinfandel",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 15
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Margarita",
+        "price": 8,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 13
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Old Fashioned",
+        "price": 9,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Mojito",
+        "price": 8,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 14
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d8",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Cosmopolitan",
+        "price": 10,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 32
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Moscow Mule",
+        "price": 10,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Whiskey Sour",
+        "price": 8,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 8
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Martini",
+        "price": 10,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 25
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Bloody Mary",
+        "price": 8,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 28
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "White Russian",
+        "price": 8,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 8
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Rum and Coke",
+        "price": 7,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 27
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Water",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Lemonade",
+        "price": 3,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 7,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coke",
+        "price": 2,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 19
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 10,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 13
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Tea",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 6,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Seltzer Water",
+        "price": 2,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 7
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coke",
+        "price": 3,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 10,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 13
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 4
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 4,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 24
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "beer",
+        "name": "Boneyard RPM IPA",
+        "price": 6,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 12
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 4
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "beer",
+        "name": "Fort George Vortex IPA",
+        "price": 6,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 16
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 25
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Old Fashioned",
+        "price": 9,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 9
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Margarita",
+        "price": 8,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 8
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    },
+    {
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }
+],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Martini",
+        "price": 10,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 20,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 50
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Rum and Coke",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 17
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Mojito",
+        "price": 11,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 9,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 38
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 2,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "entre",
+        "price": 18,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 41
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Tea",
+        "price": 3,
+        "quantity": 5
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 7,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 35
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 5
+    }],
+    "food": [{
+        "type": "entre",
+        "price": 14,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 43
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Water",
+        "price": 0,
+        "quantity": 4
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 10,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 7,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Seltzer Water",
+        "price": 2,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 7
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coke",
+        "price": 3,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 10,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 13
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 4
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 4,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 24
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "beer",
+        "name": "Boneyard RPM IPA",
+        "price": 6,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 12
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b363",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 4
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b363",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b363",
+    "drinks": [{
+        "type": "beer",
+        "name": "Fort George Vortex IPA",
+        "price": 6,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 16
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b364",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b365",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b365",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 25
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b366",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Old Fashioned",
+        "price": 9,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 9
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b6289f4eb116260f3c0b366",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Margarita",
+        "price": 8,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 8
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b366",
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    },
+    {
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }
+],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Martini",
+        "price": 10,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 20,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 50
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Rum and Coke",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 17
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b365",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Mojito",
+        "price": 11,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 9,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 38
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b367",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 2,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "entre",
+        "price": 18,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 41
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b368",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Tea",
+        "price": 3,
+        "quantity": 5
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 7,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 35
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b368",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 5
+    }],
+    "food": [{
+        "type": "entre",
+        "price": 14,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 43
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b368",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Water",
+        "price": 0,
+        "quantity": 4
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 10,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b369",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 7,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d6",
+    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 11
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d6",
     "customer": "5b5f6a4cdf814a1d71aea3c4",
     "drinks": [{
         "type": "beer",
@@ -230,7 +1541,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d8",
-    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "customer": "5b6289f4eb116260f3c0b36b",
     "drinks": [{
         "type": "wine",
         "name": "Malbec",
@@ -299,7 +1610,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d8",
-    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "customer": "5b6289f4eb116260f3c0b36b",
     "drinks": [{
         "type": "cocktail",
         "name": "Old Fashioned",
@@ -353,7 +1664,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d9",
-    "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "customer": "5b6289f4eb116260f3c0b36b",
     "drinks": [{
         "type": "cocktail",
         "name": "Whiskey Sour",
@@ -471,7 +1782,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d9",
-    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "customer": "5b6289f4eb116260f3c0b36b",
     "drinks": [{
         "type": "non-alcoholic",
         "name": "Coffee",
@@ -503,7 +1814,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d9",
-    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "customer": "5b6289f4eb116260f3c0b365",
     "drinks": [{
         "type": "non-alcoholic",
         "name": "Orange Juice",
@@ -519,7 +1830,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d9",
-    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "customer": "5b6289f4eb116260f3c0b367",
     "drinks": [{
         "type": "non-alcoholic",
         "name": "Seltzer Water",
@@ -546,7 +1857,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4d9",
-    "customer": "5b5f6a4cdf814a1d71aea3c7",
+    "customer": "5b6289f4eb116260f3c0b36b",
     "drinks": [{
         "type": "non-alcoholic",
         "name": "Orange Juice",
@@ -735,7 +2046,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4da",
-    "customer": "5b5f6a4cdf814a1d71aea3c4",
+    "customer": "5b6289f4eb116260f3c0b368",
     "drinks": [{
         "type": "wine",
         "name": "Chardonnay",
@@ -746,7 +2057,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4da",
-    "customer": "5b5f6a4cdf814a1d71aea3c5",
+    "customer": "5b6289f4eb116260f3c0b369",
     "drinks": [{
         "type": "cocktail",
         "name": "Old Fashioned",
@@ -768,7 +2079,7 @@
 }
 {
     "bar": "5b5f6cebdf814a1d71aea4da",
-    "customer": "5b5f6a4cdf814a1d71aea3c6",
+    "customer": "5b6289f4eb116260f3c0b369",
     "food": [{
         "type": "entree",
         "price": 15,
@@ -897,6 +2208,399 @@
 {
     "bar": "5b5f6cebdf814a1d71aea4da",
     "customer": "5b5f6a4cdf814a1d71aea3c8",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 7,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Seltzer Water",
+        "price": 2,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 7
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coke",
+        "price": 3,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b361",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Orange Juice",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 10,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 13
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 12,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d9",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 4
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 4,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 24
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b362",
+    "drinks": [{
+        "type": "beer",
+        "name": "Boneyard RPM IPA",
+        "price": 6,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 12
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b363",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 4
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b363",
+    "drinks": [{
+        "type": "beer",
+        "name": "Breakside IPA",
+        "price": 5,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 10
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b363",
+    "drinks": [{
+        "type": "beer",
+        "name": "Fort George Vortex IPA",
+        "price": 6,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b368",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "dessert",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 18
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b368",
+    "drinks": [{
+        "type": "wine",
+        "name": "Riesling",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 6
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b368",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b369",
+    "drinks": [{
+        "type": "wine",
+        "name": "Malbec",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 6,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 16
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b369",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b369",
+    "drinks": [{
+        "type": "wine",
+        "name": "Merlot",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b369",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 25
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36a",
+    "drinks": [{
+        "type": "wine",
+        "name": "Chardonnay",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 5
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36a",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Old Fashioned",
+        "price": 9,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 9
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4d7",
+    "customer": "5b6289f4eb116260f3c0b36a",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Margarita",
+        "price": 8,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 8
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36a",
+    "food": [{
+        "type": "entree",
+        "price": 15,
+        "quantity": 1
+    },
+    {
+        "type": "dessert",
+        "price": 5,
+        "quantity": 1
+    }
+],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Martini",
+        "price": 10,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "entree",
+        "price": 20,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 50
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Rum and Coke",
+        "price": 6,
+        "quantity": 2
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 5,
+        "quantity": 1
+    }],
+    "totalAmountSpent": 17
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "cocktail",
+        "name": "Mojito",
+        "price": 11,
+        "quantity": 1
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 9,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 38
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 2,
+        "quantity": 3
+    }],
+    "food": [{
+        "type": "entre",
+        "price": 18,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 41
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36b",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Tea",
+        "price": 3,
+        "quantity": 5
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 7,
+        "quantity": 3
+    }],
+    "totalAmountSpent": 35
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36c",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Coffee",
+        "price": 3,
+        "quantity": 5
+    }],
+    "food": [{
+        "type": "entre",
+        "price": 14,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 43
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36c",
+    "drinks": [{
+        "type": "non-alcoholic",
+        "name": "Water",
+        "price": 0,
+        "quantity": 4
+    }],
+    "food": [{
+        "type": "starter",
+        "price": 10,
+        "quantity": 2
+    }],
+    "totalAmountSpent": 20
+}
+{
+    "bar": "5b5f6cebdf814a1d71aea4da",
+    "customer": "5b6289f4eb116260f3c0b36d",
     "drinks": [{
         "type": "non-alcoholic",
         "name": "Orange Juice",

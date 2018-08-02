@@ -3,7 +3,7 @@ const { join } = require('path');
 const mongoose = require('mongoose');
 const barsDataFile = join(__dirname, '../../lib/data/bars-data.json');
 const usersDataFile = join(__dirname, '../../lib/data/users-data.json');
-const salesDataFile = join(__dirname, '../../lib/data/sales-data.json');
+const salesDataFile = join(__dirname, '../../lib/data-backup/raw-sales-data.json');
 
 describe.only('Seed data API', () => {
 
