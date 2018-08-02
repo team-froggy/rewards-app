@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 // const { Types } = require('mongoose');
 
-describe('Sales API', () => {
+describe.only('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
@@ -29,22 +29,6 @@ describe('Sales API', () => {
                 token = body.token;
                 console.log('EASTONS', token);
                 easton = body.user;
-            });
-    });
-    let kevin;
-    beforeEach(() => {
-        return request
-            .post('/api/auth/signup')
-            .send({
-                name: 'Kevin',
-                year: 1990,
-                email: 'kevin@acl.com',
-                password: 'kevin123',
-                roles: ['customer', 'owner', 'admin']
-            })
-            .then(({ body }) => {
-                console.log('KEVINS', token);
-                kevin = body.user;
             });
     });
 
@@ -102,7 +86,7 @@ describe('Sales API', () => {
             .post('/api/sales')
             .set('Authorization', token)
             .send({
-                bar: teardrop._id,
+                bar: lifeOfRiley._id,
                 customer: easton._id, 
                 drinks: [{
                     type: 'beer',
@@ -125,6 +109,7 @@ describe('Sales API', () => {
             })
             .then(({ body }) => sale = body);
     });
+    
 
     let saleTwo;
     beforeEach(() => {
@@ -153,6 +138,36 @@ describe('Sales API', () => {
                 totalAmountSpent: 25
             })
             .then(({ body }) => saleTwo = body);
+    });
+
+    let saleThree;
+    beforeEach(() => {
+        return request
+            .post('/api/sales')
+            .set('Authorization', token)
+            .send({
+                bar: teardrop._id,
+                customer: easton._id, 
+                drinks: [{
+                    type: 'beer',
+                    name:'Breakside IPA',
+                    price: 5,
+                    quantity: 2
+                },
+                {
+                    type: 'beer',
+                    name:'Vortex IPA',
+                    price: 5,
+                    quantity: 1
+                }],
+                food: [{
+                    type: 'entree',
+                    price: 10,
+                    quantity: 1
+                }],
+                totalAmountSpent: 30
+            })
+            .then(({ body }) => saleThree = body);
     });
 
     const makeSimple = (bar, sale, user) => {
@@ -207,7 +222,10 @@ describe('Sales API', () => {
                 delete body[1].__v;
                 delete body[1].createdAt;
                 delete body[1].updatedAt;
-                assert.deepEqual(body, [makeSimple(teardrop, sale, easton), makeSimple(lifeOfRiley, saleTwo, easton)]);
+                delete body[2].__v;
+                delete body[2].createdAt;
+                delete body[2].updatedAt;
+                assert.deepEqual(body, [makeSimple(lifeOfRiley, sale, easton), makeSimple(lifeOfRiley, saleTwo, easton), makeSimple(teardrop, saleThree, easton)]);
             });
     });
 
@@ -229,17 +247,19 @@ describe('Sales API', () => {
                 delete body[0].__v;
                 delete body[0].createdAt;
                 delete body[0].updatedAt;
-                assert.deepEqual(body, [makeSimple(teardrop, sale, easton)]);
+                delete body[1].__v;
+                delete body[1].createdAt;
+                delete body[1].updatedAt;
+                assert.deepEqual(body, [makeSimple(lifeOfRiley, sale, easton), makeSimple(lifeOfRiley, saleTwo, easton)]);
             });
     });
 
-    it('GET the average ticket amount spent by customer', () => {
+    it('GET premium customers', () => {
         return request
-            .get(`/api/sales/average-ticket-amt/${lifeOfRiley._id}`)
+            .get(`/api/sales/premium-customers/${lifeOfRiley._id}`)
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                console.log('BODDYYYYYYY!', body);
                 assert.deepEqual(body, customerInfo);
             });
     });
@@ -275,7 +295,10 @@ describe('Sales API', () => {
                 delete body[0].__v;
                 delete body[0].createdAt;
                 delete body[0].updatedAt;
-                assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo, easton)]);
+                delete body[1].__v;
+                delete body[1].createdAt;
+                delete body[1].updatedAt;
+                assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo, easton), makeSimple(teardrop, saleThree, easton)]);
             });
     });
 
