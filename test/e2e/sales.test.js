@@ -239,6 +239,16 @@ describe.only('Sales API', () => {
             });
     });
 
+    it.only('GETS total revenue to a specific bar', () => {
+        return request
+            .get(`/api/sales/bar-revenue/${lifeOfRiley._id}`)
+            .set('Authorization', token)
+            .then(checkOk)
+            .then(({ body }) => {
+                assert.deepEqual(body, [{ _id: 'Revenue', totalSales: 55 }]);
+            });
+    });
+
     it('GET a list of all sales specific to an individual bar', () => {
         return request
             .get(`/api/sales/${sale.bar}`)
