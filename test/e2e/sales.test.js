@@ -27,6 +27,7 @@ describe('Sales API', () => {
             })
             .then(({ body }) => {
                 token = body.token;
+                console.log(token);
                 user = body.user;
             });
     });
@@ -194,7 +195,7 @@ describe('Sales API', () => {
 
     it('GET the average ticket amount spent by customer', () => {
         return request
-            .get('api/sales/average-ticket-amt')
+            .get(`/api/sales/average-ticket-amt/${lifeOfRiley._id}`)
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
