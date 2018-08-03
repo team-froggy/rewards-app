@@ -242,7 +242,7 @@ describe('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                assert.deepEqual(body, [{ _id: { _id: lifeOfRiley._id, name: 'Life of Riley' },
+                assert.deepEqual(body[0], [{ _id: { _id: lifeOfRiley._id, name: 'Life of Riley' },
                     totalSales: 55 }]);
             });
     });
