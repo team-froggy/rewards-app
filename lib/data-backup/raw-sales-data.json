@@ -846,7 +846,7 @@
         "quantity": 3
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 18,
         "quantity": 2
     }],
@@ -878,7 +878,7 @@
         "quantity": 5
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 14,
         "quantity": 2
     }],
@@ -1239,7 +1239,7 @@
         "quantity": 3
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 18,
         "quantity": 2
     }],
@@ -1271,7 +1271,7 @@
         "quantity": 5
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 14,
         "quantity": 2
     }],
@@ -2151,7 +2151,7 @@
         "quantity": 3
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 18,
         "quantity": 2
     }],
@@ -2183,7 +2183,7 @@
         "quantity": 5
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 14,
         "quantity": 2
     }],
@@ -2544,7 +2544,7 @@
         "quantity": 3
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 18,
         "quantity": 2
     }],
@@ -2576,7 +2576,7 @@
         "quantity": 5
     }],
     "food": [{
-        "type": "entre",
+        "type": "entree",
         "price": 14,
         "quantity": 2
     }],
