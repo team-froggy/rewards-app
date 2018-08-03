@@ -4,7 +4,6 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 
 describe('Bars API', () => {
-
     
     beforeEach(() => dropCollection('bars'));
     beforeEach(() => dropCollection('sales'));
