@@ -23,13 +23,13 @@
     "name": "Louis",
     "year": 2010,
     "email": "louis@acl-teamfroggy.com",
-    "password": "frogger2",
+    "password": "frogger1",
     "roles": ["owner", "customer"]
 }
 {
     "name": "Journey",
     "year": 2012,
     "email": "journey@acl-teamfroggy.com",
-    "password": "frogger3",
+    "password": "frogger1",
     "roles": ["customer"]
 }

@@ -4,7 +4,7 @@ const { dropCollection } = require('./_db');
 const { checkOk } = request;
 // const { Types } = require('mongoose');
 
-describe.only('Sales API', () => {
+describe('Sales API', () => {
     
     beforeEach(() => {
         dropCollection('sales');
@@ -27,7 +27,7 @@ describe.only('Sales API', () => {
             })
             .then(({ body }) => {
                 token = body.token;
-                console.log('EASTONS', token);
+                // console.log('EASTONS', token);
                 easton = body.user;
             });
     });
@@ -265,7 +265,8 @@ describe.only('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                assert.deepEqual(body, [{ _id: 'Revenue', totalSales: 55 }]);
+                assert.deepEqual(body, [{ _id: { _id: lifeOfRiley._id, name: 'Life of Riley' },
+                    totalSales: 55 }]);
             });
     });
 
@@ -310,7 +311,7 @@ describe.only('Sales API', () => {
 
     it('GETS total revenue of all bars (if admin)', () => {
         return request
-            .get('/api/sales/sales-by-bar')
+            .get('/api/sales/admin/sales-by-bar')
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
