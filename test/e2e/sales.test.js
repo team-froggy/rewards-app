@@ -2,7 +2,6 @@ const { assert } = require('chai');
 const request = require('./request');
 const { dropCollection } = require('./_db');
 const { checkOk } = request;
-// const { Types } = require('mongoose');
 
 describe('Sales API', () => {
     
@@ -27,7 +26,6 @@ describe('Sales API', () => {
             })
             .then(({ body }) => {
                 token = body.token;
-                // console.log('EASTONS', token);
                 easton = body.user;
             });
     });
@@ -110,7 +108,6 @@ describe('Sales API', () => {
             .then(({ body }) => sale = body);
     });
     
-
     let saleTwo;
     beforeEach(() => {
         return request
@@ -206,26 +203,6 @@ describe('Sales API', () => {
         }
     ];
 
-    const lifeOfRileyInfo = (bar) => {
-        const info = { 
-            _id: { _id: bar._id, name: bar.name },
-            totalRevenue: 55,
-            totalTickets: 2,
-            avgTicketValue: 27.5 
-        };
-        return info;
-    };
-
-    const teardropInfo = (bar) => {
-        const info = { 
-            _id: { _id: bar._id, name: bar.name },
-            totalRevenue: 30,
-            totalTickets: 1,
-            avgTicketValue: 30 
-        };
-        return info;
-    };
-
     it('POST a transaction', () => {
         assert.isOk(sale._id);
     });
@@ -255,7 +232,7 @@ describe('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                assert.isOk(body[0].totalSales);
+                assert.deepInclude(body, [{ _id: 'owner_revenue', totalSales: 85 }], 'response includes revenue');
             });
     });
 
@@ -315,7 +292,12 @@ describe('Sales API', () => {
             .set('Authorization', token)
             .then(checkOk)
             .then(({ body }) => {
-                assert.deepEqual(body, [lifeOfRileyInfo(lifeOfRiley), teardropInfo(teardrop)]);
+                assert.deepEqual(body[0][0].totalRevenue, 55);
+                assert.deepEqual(body[0][1].totalRevenue, 30);
+                assert.deepEqual(body[1][0].drinkQty, 3);
+                assert.deepEqual(body[1][1].drinkQty, 5);
+                assert.deepEqual(body[2][0].foodQty, 1);
+                assert.deepEqual(body[2][1].foodQty, 4);
             });
     });
 
@@ -341,6 +323,4 @@ describe('Sales API', () => {
                 assert.deepEqual(body, [makeSimple(lifeOfRiley, saleTwo, easton), makeSimple(teardrop, saleThree, easton)]);
             });
     });
-
 });
-
