@@ -25,10 +25,10 @@ Total Revenue To a Specific Bar (Bar Id)
  -- shows total revenue of the selected bar
 
 List of Premium Customers
-shows customers’ sales info (total tickets, total & average amount spent, min & max amount spent
-sorted descending (highest to lowest total sales)
+ -- shows customers’ sales info (total tickets, total & average amount spent, min & max amount spent
+ -- sorted descending (highest to lowest total sales)
 
 Admin:
 Total Revenue of All Bars
-for each bar shows total revenue, total tickets and average ticket value
-sorted descending revenue
+ -- for each bar, shows total revenue, total tickets and average ticket value
+ -- sorted descending revenue
