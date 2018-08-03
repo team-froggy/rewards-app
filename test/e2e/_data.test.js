@@ -5,7 +5,7 @@ const barsDataFile = join(__dirname, '../../lib/data/bars-data.json');
 const usersDataFile = join(__dirname, '../../lib/data/users-data.json');
 const salesDataFile = join(__dirname, '../../lib/data/sales-data.json');
 
-describe('Seed data API', () => {
+describe.skip('Seed data API', () => {
 
     beforeEach(() => {
         // execSync('mongoimport -h ds263791.mlab.com:63791 -d heroku_p43lq6vx -c users -u heroku_p43lq6vx -p q7k078nvikkva4bmmk74no52fj --drop --file lib/data/users-data.json');

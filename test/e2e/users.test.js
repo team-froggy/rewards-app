@@ -20,6 +20,10 @@ describe('Users API', () => {
                 roles: ['customer']
             })
             .then(({ body }) => {
+                delete body.user.hash;
+                delete body.user.createdAt;
+                delete body.user.updatedAt;
+                delete body.user.__v;
                 token = body.token;
                 eastonJohn = body.user;
             });
@@ -33,7 +37,7 @@ describe('Users API', () => {
         assert.isOk(eastonJohn._id);
     });
 
-    it ('gets a list of users', () => {
+    it('gets a list of users', () => {
         return request
             .get('/api/users')
             .set('Authorization', token)
