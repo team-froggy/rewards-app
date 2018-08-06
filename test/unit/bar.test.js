@@ -32,4 +32,6 @@ describe('Bar model', () => {
         const errors = getErrors(review.validateSync(), 1);
         assert.equal(errors.owner.kind, 'required'); 
     });
+
+    // could also include maxLength tests for phone and zip
 });
