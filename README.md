@@ -52,20 +52,7 @@ See env.example for keys/secret
  * Bars
  * Sales
  
-**Dev Dependencies**
-* chai
-* chai-http
-* esLint
-* mocha
-* nodemon
-* morgan
-
-**Dependencies**
-* bcryptjs
-* dotenv
-* express
-* jsonwebtoken
-* mongoose
+ // These are in the `package.json`, no need to repeat here and potentially be off
  
  **Middleware**
  * ensureAuth (token via JSON web tokens)
