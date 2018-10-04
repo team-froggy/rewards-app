@@ -52,23 +52,3 @@ See env.example for keys/secret
  * Bars
  * Sales
  
-**Dev Dependencies**
-* chai
-* chai-http
-* esLint
-* mocha
-* nodemon
-* morgan
-
-**Dependencies**
-* bcryptjs
-* dotenv
-* express
-* jsonwebtoken
-* mongoose
- 
- **Middleware**
- * ensureAuth (token via JSON web tokens)
- * ensure<role> (defaults are 'customer', 'owner', 'admin')
- * Most routes require a token, some require specific roles included in User schema
- 
